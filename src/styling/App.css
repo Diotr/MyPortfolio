@@ -1,7 +1,10 @@
 main{
     height:100%;
-    background-color: rgb(59,58,62);
-    position: relative;
+    background-color:rgb(21, 15, 49);;
+    position: absolute;
     padding-top:65px;
+    overflow: auto; 
+    display: inline-block;
+    
    
 }

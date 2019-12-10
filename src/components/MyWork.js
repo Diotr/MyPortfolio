@@ -8,7 +8,7 @@ import '../styling/MyWork.css';
 const MyWork=()=> {
 
 const projects = [
-  {project: 'tetrisgame', image: bird, title: 'bird', link:'/aboutme'},
+  {project: 'tetrisgame', image: bird, title: 'tetris', link:'/tetrisdetails'},
   {project: 'tetrisgame', image: bird, title: 'bird', link:'/aboutme'},
   {project: 'tetrisgame', image: bird, title: 'bird', link:'/aboutme'},
 

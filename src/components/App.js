@@ -8,9 +8,11 @@ import Resume from './Resume';
 import Contact from './Contact';
 import SideDrawer from './SideDrawer';
 import Home from './Home';
+import TetrisDetails from './projectDetails/TetrisDetails'
 
 import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 import {Container, Jumbotron  } from 'react-bootstrap';
+
 const App=()=> {
   return (
     <Router>
@@ -38,6 +40,9 @@ const App=()=> {
    </Route>
   <Route path = '/contact'>
   <Contact/>
+  </Route>
+  <Route path = '/tetrisdetails'>
+  <TetrisDetails/>
   </Route>
 </Switch>
 </main>
