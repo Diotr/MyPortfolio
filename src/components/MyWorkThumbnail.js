@@ -4,6 +4,8 @@ import {BrowserRouter as Router, Switch, Route, Link, withRouter} from 'react-ro
 import '../styling/MyWorkThumbnail.css';
 import { tsPropertySignature } from '@babel/types';
 import {useHistory} from "react-router-dom";
+import Bootstrap from 'bootstrap';
+
 
 
 const MyWorkThumbnail = props =>{
@@ -27,6 +29,7 @@ const MyWorkThumbnail = props =>{
         
      <div className ='toplayer'>
      <h1 className = 'thumbtext'>{props.pr.title}</h1>
+     
          </div>
         </div> 
         

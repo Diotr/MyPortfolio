@@ -7,7 +7,7 @@ function NavigationBar() {
   return (
 
 
-<Navbar className='fixed-top' collapseOnSelect expand="lg">
+<Navbar className='fixed-top  ' collapseOnSelect expand="sm">
   
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">

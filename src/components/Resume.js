@@ -1,7 +1,7 @@
 import React from 'react';
 const Resume=()=> {
   return (
-    <div className="Resume">
+    <div className="container">
     
       <h1>Resume</h1>
       <p>A résumé or resume[a][1] is a document used and created by a person to present their background, skills, and accomplishments. Résumés can be used for a variety of reasons, but most often they are used to secure new employment.[2]

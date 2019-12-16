@@ -1,2 +1,82 @@
+@media (min-width: 992px) {   
+    
+    .myworkthumbnail{
+    max-width: 35%; 
+   }
+div.toplayer{
+  background-color: rgba(38, 38, 38, 0);
+}
+   
 
- 
+
+   
+}
+@media screen and (max-width: 991px) {  
+  div.toplayer{
+    background-color: rgba(38, 38, 38, 0.9); 
+
+  } 
+
+
+  div.toplayer .thumbtext{
+     
+    font-family: 'coolvetica';
+     font-size:10vw;
+     color:whitesmoke;
+     position: relative;
+     top:50%;
+     left:40%;
+}
+}
+
+    .myworkthumbnail {
+        margin:1vh;
+        perspective: 1px;
+        border-radius: 5px;  
+        }
+     div.myworkthumbnail img{
+       position: relative;
+       max-width: 100%;
+       border-radius: 5px;
+   
+   }
+   div.toplayer{
+     position: absolute;
+     top:0;
+     left:0;
+     height: 100%;
+     width:100%;
+     z-index: 1000;
+   border-radius: 5px;
+    
+   }
+   
+    .thumbtext{
+        font-family: coolvetica;
+        position: relative;
+        font-size:5vw;
+        top:70%;
+        left:60%;
+        color:rgba(38, 38, 38, 0.4);
+        max-width: fit-content;
+           }
+   div.toplayer:hover{
+        background-color: rgba(38, 38, 38, 0.9); 
+   
+        }
+   div.toplayer:hover .thumbtext{
+     
+       font-family: 'coolvetica';
+        font-size:5vw;
+        color:whitesmoke;
+        position: relative;
+        top:50%;
+        left:50%;
+   }
+
+  
+    @font-face{
+      font-family: 'coolvetica';
+      src: local('coolvetica'),url(../fonts/coolvetica/coolvetica.ttf) format('truetype');
+    }
+

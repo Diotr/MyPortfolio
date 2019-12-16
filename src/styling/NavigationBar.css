@@ -1,15 +1,14 @@
-
-  
- 
-  
-  
- 
-  
-  
-  
-  
- 
-  
- 
+.navbar {
+        background-color: rgb(68, 51, 145);
+        }
+  .navbar .navbar-nav .nav-link:not(.disabled)
+   {
+    color: #f8973c;
+    font-family: 'coolvetica';
+   }
+  .navbar .navbar-nav .nav-link:not(.disabled):hover
+   {
+     color: azure;
+   }
   
   

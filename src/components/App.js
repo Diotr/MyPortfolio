@@ -12,17 +12,32 @@ import TetrisDetails from './projectDetails/TetrisDetails'
 
 import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 import {Container, Jumbotron  } from 'react-bootstrap';
+const mainStyle = {
 
+  
+  height:'100%',
+    backgroundColor:'rgb(66, 194, 245)',
+   paddingLeft:0,
+   paddingRight:0
+  
+    
+   
+    
+
+
+
+}
 const App=()=> {
   return (
+ 
     <Router>
-  <div id='app'>
-
-  <NavigationBar/>
+  
 
 
-<main>
 
+
+<main className = 'container-fluid ' style={mainStyle} >
+<NavigationBar/>
 <Switch>
   <Route exact path = '/'>
     <Home/>
@@ -47,8 +62,9 @@ const App=()=> {
 </Switch>
 </main>
 
-    </div>  
+     
     </Router>
+    
   );
 }
 
