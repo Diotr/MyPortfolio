@@ -12,11 +12,18 @@ import TetrisDetails from './projectDetails/TetrisDetails'
 
 import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 import {Container, Jumbotron  } from 'react-bootstrap';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab, faGithub, faGithubSquare } from '@fortawesome/free-brands-svg-icons'
+import { faCheckSquare, faCoffee, faAddressCard,faPrint  } from '@fortawesome/free-solid-svg-icons'
+library.add(
+  fab, faCheckSquare, faCoffee, faAddressCard,faPrint,faGithubSquare
+  );
+  
 const mainStyle = {
 
   
   height:'100%',
-    backgroundColor:'rgb(66, 194, 245)',
+    backgroundColor:'rgb(255,255,255)',
    paddingLeft:0,
    paddingRight:0
   
@@ -38,6 +45,7 @@ const App=()=> {
 
 <main className = 'container-fluid ' style={mainStyle} >
 <NavigationBar/>
+
 <Switch>
   <Route exact path = '/'>
     <Home/>

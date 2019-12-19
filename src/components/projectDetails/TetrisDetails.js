@@ -6,10 +6,26 @@ import {carousel} from 'bootstrap';
 import TetrisImage from '../../media/images/tetr.png';
 import Owl from '../../media/images/sowa.jpg';
 import Bird from '../../media/images/bird_silhouette_vector_134154_1920x1080.jpg';
+import jsLogo from '../../media/logos/javascript-logo.png'
+import bootstrapLogo from '../../media/logos/bootstrap-logo.png'
+import reactLogo from '../../media/logos/react-logo.png'
+import css3Logo from '../../media/logos/css3-logo.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAdjust, faAddressCard, faPrint } from '@fortawesome/free-solid-svg-icons';
+import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 const hrStyle = {
-   marginTop:'3vw',
-   marginBottom:'3vw'
+   marginTop:'2vw',
+   marginBottom:'2vw',
+   backgroundColor:'white'
 }
+const logosStyle = {
+   height:'5.5vh' ,
+   marginRight: '4vh', 
+   
+ 
+ 
+}
+
 
 const TetrisDetails = () =>{
 
@@ -65,11 +81,21 @@ return (
     </div>
     <hr style = {hrStyle}></hr>
     <div className = 'row'>
-        <div className = 'col-md-8'>
-        technology used +
+        <div className = 'col-md-8 col-10'>
+            <div className = 'logos d-flex flex-row'>
+                <img style = {logosStyle} src={jsLogo} alt='js Logo'></img>
+                <img style = {logosStyle} src={reactLogo} alt='react Logo'></img>
+                <img style = {logosStyle} src={bootstrapLogo} alt='bootstrap Logo'></img>
+                <img style = {logosStyle} src={css3Logo} alt='css3 Logo'></img>
+            </div>
+       
         </div>
-        <div className = 'col-md-4'>
-        buttons
+        <div className = 'col-md-4 col-2 d-flex  justify-content-end align-items-center'>
+            <button className ='btn d-none  d-md-block border-dark h-75'>Play Tetris</button>
+            <button className = 'btn '> <FontAwesomeIcon icon = {faGithubSquare} size='3x'/></button>
+           
+        
+        
         </div>
         </div>
 </div>

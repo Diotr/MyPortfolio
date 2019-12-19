@@ -1,9 +1,10 @@
-import React from 'react';
+import React from 'react'
+import WhiteLake from '../media/images/blur-calm-waters-dawn-daylight-395198.jpg'
 function AboutMe() {
   return (
-    <div className="container  p-5 h-100">
-      <h1 className='my-2 ml-5'>Diotrek Michalce</h1>
-      <div className=' h-75 ' style={{borderLeft: '5px solid', borderTop:'5px solid', padding:'8vw'}}>
+    <div className="container  p-5 h-75">
+      <h1 className='jumbotron'>Diotrek Michalce</h1>
+      <div className=' h-100 ' style={{borderLeft: '5px solid', borderTop:'5px solid', padding:'8vw' }}>
       <h3 className = 'm-3'>AboutMe</h3>
       <p className = 'm-3'> "Lorem ipsum dolor sit amet, 
         consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
