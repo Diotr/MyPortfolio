@@ -17,6 +17,7 @@ const projects = [
   {project: 'tetrisgame', image: bird, title: 'bird2', link:'/aboutme'},
   {project: 'tetrisgame', image: bird, title: 'bird', link:'/aboutme'},
 
+  
   {project: 'tetrisgame', image: bird, title: 'bird', link:'/aboutme'},
   {project: 'tetrisgame', image: bird, title: 'bird2', link:'/aboutme'},
   {project: 'tetrisgame', image: bird, title: 'bird', link:'/aboutme'},
@@ -32,7 +33,6 @@ const projects = [
   {project: 'tetrisgame', image: bird, title: 'bird', link:'/aboutme'},
 
   {project: 'tetrisgame', image: bird, title: 'bird', link:'/aboutme'},
- 
   
 
 
