@@ -9,6 +9,8 @@ import Contact from './Contact';
 import SideDrawer from './SideDrawer';
 import Home from './Home';
 import TetrisDetails from './projectDetails/TetrisDetails'
+import SnakeGameDetails from './projectDetails/SnakeGameDetails'
+import ProjectDescription from './projectDetails/ProjectDescription'
 
 import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 import {Container, Jumbotron  } from 'react-bootstrap';
@@ -64,9 +66,10 @@ const App=()=> {
   <Route path = '/contact'>
   <Contact/>
   </Route>
-  <Route path = '/tetrisdetails'>
-  <TetrisDetails/>
+  <Route path = '/projectdescription'>
+  <ProjectDescription/>
   </Route>
+  
 </Switch>
 </main>
 

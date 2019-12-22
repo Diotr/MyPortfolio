@@ -26,14 +26,26 @@ const logosStyle = {
  
 }
 
+              
 
-const TetrisDetails = () =>{
 
+const ProjectDescription = () =>{
+    const title = 'My Portfolio';
+    const info = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,';
+    const carouselImage1 =TetrisImage;
+    const carouselImage2 = Owl;
+    const carouselImage3 = Bird;
+    const gitLink ='https://github.com/Diotr/MyPortfolio';
+    const playButton = <button className ='btn d-none  d-md-block border-dark h-100'>Play something</button>;
+    const logo1=<img style = {logosStyle} src={jsLogo} alt='js Logo'></img>
+    const logo2=<img style = {logosStyle} src={css3Logo} alt='css3 Logo'></img>
+    const techUsedLogos =[logo1,logo2];
+                   
 
 return (
 <div className = 'container' >
     <div className='row d-flex justify-content-center' >
-        <h1 className = 'pt-5 '>Tetris</h1>
+        <h1 className = 'pt-5 '>{title}</h1>
         
     </div>
     <hr style = {hrStyle}></hr>
@@ -41,17 +53,24 @@ return (
         //info
     }
     <div className = 'row'>
+    <div className = 'col-md-4'>
+            <h1>info</h1>
+            <p>
+            {info}
+            </p>
+          
+        </div>
         <div className = 'col-md-8 '>
         <div id='projectPreview' className='carousel slide ' data-ride='carousel'>
         <div className = 'carousel-inner'>
             <div className = 'carousel-item active'>
-                <img className='d-block w-100 rounded'src={TetrisImage} alt = 'FirstImg'></img>
+                <img className='d-block w-100 rounded'src={carouselImage1} alt = 'FirstImg'></img>
             </div>
             <div className ='carousel-item'>
-            <img className='d-block w-100 rounded'src={Owl} alt = 'SecondImg'></img>
+            <img className='d-block w-100 rounded'src={carouselImage2} alt = 'SecondImg'></img>
             </div>
             <div className ='carousel-item'>
-            <img className='d-block w-100 rounded'src={Bird} alt = 'ThirdImg'></img>
+            <img className='d-block w-100 rounded'src={carouselImage3} alt = 'ThirdImg'></img>
             </div>
         </div>
         <a className = 'carousel-control-prev' href = '#projectPreview' role='button' data-slide = 'prev'>
@@ -65,34 +84,20 @@ return (
     </div>
   
         </div>
-        <div className = 'col-md-4'>
-            <h1>info</h1>
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident,
-             sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          
-        </div>
+        
         
     </div>
     <hr style = {hrStyle}></hr>
     <div className = 'row'>
         <div className = 'col-md-8 col-10'>
             <div className = 'logos d-flex flex-row'>
-                <img style = {logosStyle} src={jsLogo} alt='js Logo'></img>
-                <img style = {logosStyle} src={reactLogo} alt='react Logo'></img>
-                <img style = {logosStyle} src={bootstrapLogo} alt='bootstrap Logo'></img>
-                <img style = {logosStyle} src={css3Logo} alt='css3 Logo'></img>
+                {techUsedLogos}
             </div>
        
         </div>
-        <div className = 'col-md-4 col-2 d-flex  justify-content-end align-items-stretch'>
-            <button className ='btn d-none  d-md-block border-dark h-100'>Play Tetris</button>
-            <a href='https://github.com/Diotr/tetris-react'
+        <div className = 'col-md-4 col-2 d-flex  justify-content-end align-items-center'>
+            {playButton}
+            <a href={gitLink}
              className = 'btn border border-dark  mx-3 h-100'>
              <FontAwesomeIcon icon = {faGithubSquare} size='3x'/> </a>
            
@@ -103,4 +108,4 @@ return (
 </div>
 );
 };
-export default TetrisDetails;
+export default ProjectDescription;

@@ -27,13 +27,13 @@ const logosStyle = {
 }
 
 
-const TetrisDetails = () =>{
+const TaskManager = () =>{
 
 
 return (
 <div className = 'container' >
     <div className='row d-flex justify-content-center' >
-        <h1 className = 'pt-5 '>Tetris</h1>
+        <h1 className = 'pt-5 '>Task Manager</h1>
         
     </div>
     <hr style = {hrStyle}></hr>
@@ -41,6 +41,18 @@ return (
         //info
     }
     <div className = 'row'>
+    <div className = 'col-md-4'>
+            <h1>info</h1>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident,
+             sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          
+        </div>
         <div className = 'col-md-8 '>
         <div id='projectPreview' className='carousel slide ' data-ride='carousel'>
         <div className = 'carousel-inner'>
@@ -65,18 +77,7 @@ return (
     </div>
   
         </div>
-        <div className = 'col-md-4'>
-            <h1>info</h1>
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident,
-             sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          
-        </div>
+        
         
     </div>
     <hr style = {hrStyle}></hr>
@@ -84,15 +85,15 @@ return (
         <div className = 'col-md-8 col-10'>
             <div className = 'logos d-flex flex-row'>
                 <img style = {logosStyle} src={jsLogo} alt='js Logo'></img>
-                <img style = {logosStyle} src={reactLogo} alt='react Logo'></img>
-                <img style = {logosStyle} src={bootstrapLogo} alt='bootstrap Logo'></img>
+               
+              
                 <img style = {logosStyle} src={css3Logo} alt='css3 Logo'></img>
             </div>
        
         </div>
-        <div className = 'col-md-4 col-2 d-flex  justify-content-end align-items-stretch'>
-            <button className ='btn d-none  d-md-block border-dark h-100'>Play Tetris</button>
-            <a href='https://github.com/Diotr/tetris-react'
+        <div className = 'col-md-4 col-2 d-flex  justify-content-end align-items-center'>
+            <button className ='btn d-none  d-md-block border-dark h-100'>Play Snake</button>
+            <a href='https://github.com/Diotr/Task-Manager'
              className = 'btn border border-dark  mx-3 h-100'>
              <FontAwesomeIcon icon = {faGithubSquare} size='3x'/> </a>
            
@@ -103,4 +104,4 @@ return (
 </div>
 );
 };
-export default TetrisDetails;
+export default TaskManager;

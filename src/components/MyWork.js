@@ -5,6 +5,7 @@ import TetrisBackground from '../media/images/tetr.png';
 import sowa from '../media/images/sowa.jpg';
 import bird from '../media/images/bird_silhouette_vector_134154_1920x1080.jpg';
 import '../styling/MyWork.css';
+import ProjectDescription from './projectDetails/ProjectDescription';
 
 
 
@@ -13,26 +14,13 @@ import '../styling/MyWork.css';
 const MyWork=()=> {
 
 const projects = [
-  {project: 'tetrisgame', image: bird, title: 'tetris', link:'/tetrisdetails'},
-  {project: 'tetrisgame', image: bird, title: 'bird2', link:'/aboutme'},
-  {project: 'tetrisgame', image: bird, title: 'bird', link:'/aboutme'},
+  {project: 'tetrisgame', image: bird, title: 'tetris', link:'/projectdescription'},
+  {project: 'snakegame', image: sowa, title: 'Snake', link:'/projectdescription'},
+  {project: 'myportfolio', image: TetrisBackground, title: 'My Portfolio', link:'/projectdescription'},
 
   
-  {project: 'tetrisgame', image: bird, title: 'bird', link:'/aboutme'},
-  {project: 'tetrisgame', image: bird, title: 'bird2', link:'/aboutme'},
-  {project: 'tetrisgame', image: bird, title: 'bird', link:'/aboutme'},
-
-  {project: 'tetrisgame', image: bird, title: 'bird', link:'/aboutme'},
+  {project: 'timemanager', image: bird, title: 'bird', link:'/projectdescription'},
  
-  {project: 'tetrisgame', image: bird, title: 'tetris', link:'/tetrisdetails'},
-  {project: 'tetrisgame', image: bird, title: 'bird2', link:'/aboutme'},
-  {project: 'tetrisgame', image: bird, title: 'bird', link:'/aboutme'},
-
-  {project: 'tetrisgame', image: bird, title: 'bird', link:'/aboutme'},
-  {project: 'tetrisgame', image: bird, title: 'bird2', link:'/aboutme'},
-  {project: 'tetrisgame', image: bird, title: 'bird', link:'/aboutme'},
-
-  {project: 'tetrisgame', image: bird, title: 'bird', link:'/aboutme'},
   
 
 
@@ -46,7 +34,7 @@ const projects = [
          
         </div>
       
-        
+       
     )
   };
   
