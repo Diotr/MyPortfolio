@@ -27,8 +27,8 @@ const mainStyle = {
   height:'100%',
     backgroundColor:'rgb(255,255,255)',
    paddingLeft:0,
-   paddingRight:0
-  
+   paddingRight:0,
+  overflow:'auto'
     
    
     
@@ -42,11 +42,11 @@ const App=()=> {
     <Router>
   
 
-
+    <NavigationBar/>
 
 
 <main className = 'container-fluid ' style={mainStyle} >
-<NavigationBar/>
+
 
 <Switch>
   <Route exact path = '/'>

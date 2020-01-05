@@ -1,8 +1,6 @@
 @media (min-width: 992px) {   
     
-    .myworkthumbnail{
-    max-width: 35%; 
-   }
+  
 div.toplayer{
   background-color: rgba(38, 38, 38, 0);
 }
@@ -21,11 +19,11 @@ div.toplayer{
   div.toplayer .thumbtext{
      
     font-family: 'coolvetica';
-     font-size:10vw;
+     font-size:3vw;
      color:whitesmoke;
      position: relative;
      top:50%;
-     left:40%;
+     
 }
 }
 
@@ -54,9 +52,9 @@ div.toplayer{
     .thumbtext{
         font-family: coolvetica;
         position: relative;
-        font-size:5vw;
+        font-size:4vh;
         top:70%;
-        left:60%;
+        left:0%;
         color:rgba(38, 38, 38, 0.4);
         max-width: fit-content;
            }
@@ -67,11 +65,11 @@ div.toplayer{
    div.toplayer:hover .thumbtext{
      
        font-family: 'coolvetica';
-        font-size:5vw;
+        font-size:1vw;
         color:whitesmoke;
         position: relative;
         top:50%;
-        left:50%;
+        left:0%;
    }
 
   
