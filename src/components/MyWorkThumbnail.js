@@ -9,26 +9,22 @@ import Bootstrap from 'bootstrap';
 
 
 const MyWorkThumbnail = props =>{
- let history = useHistory();
-  
-    const handleClick = ()=>{ //redirect to the project page
-        history.push(props.pr.link);
-       
-        console.log(props)
 
-    };
- 
-
+   const projectIndex = props.index;
+   
+    
 
 
 
     return( 
-       <div className='myworkthumbnail' onClick={()=>handleClick(props.pr.link) }>
+       <div className='myworkthumbnail'onClick={()=>{props.switchProjectHandler(projectIndex)}}>
         <div>
         <img src ={props.pr.image}/>
         
      <div className ='toplayer'>
      <h1 className = 'thumbtext'>{props.pr.title}</h1>
+     
+     {props.bu}
      
          </div>
         </div> 

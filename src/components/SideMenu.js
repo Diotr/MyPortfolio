@@ -8,19 +8,15 @@ import bird from '../media/images/bird_silhouette_vector_134154_1920x1080.jpg';
 import ProjectDescription from './projectDetails/ProjectDescription';
 
 
-const SideMenu = () =>{
-    const projects = [
-        {project: 'tetrisgame', image: bird, title: 'tetris', link:'/projectdescription'},
-        {project: 'snakegame', image: bird, title: 'Snake', link:'/projectdescription'},
-        {project: 'myportfolio', image: TetrisBackground, title: 'My Portfolio', link:'/projectdescription'},
-        {project: 'timemanager', image: bird, title: 'bird', link:'/projectdescription'},
+const SideMenu = (props) =>{
+    
       
-       
-      ];
     return (
 
         <div className = ''>
-        { projects.map((item)=>(<MyWorkThumbnail key ={item.project} pr = {item}/> )) } 
+            
+        { props.projects.map((item)=>(<MyWorkThumbnail key ={item.project} 
+        pr = {item} switchProjectHandler={()=>props.switchProjectHandler()}/> )) } 
         </div>
 
         

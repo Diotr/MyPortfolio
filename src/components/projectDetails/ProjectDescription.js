@@ -13,6 +13,7 @@ import css3Logo from '../../media/logos/css3-logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAdjust, faAddressCard, faPrint } from '@fortawesome/free-solid-svg-icons';
 import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
+import { useState, useEffect } from 'react';
 const hrStyle = {
    marginTop:'2vw',
    marginBottom:'2vw',
@@ -29,8 +30,12 @@ const logosStyle = {
               
 
 
-const ProjectDescription = () =>{
-    const title = 'My Portfolio';
+const ProjectDescription = (props) =>{
+    
+
+    
+
+
     const info = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,';
     const carouselImage1 =TetrisImage;
     const carouselImage2 = Owl;
@@ -40,12 +45,14 @@ const ProjectDescription = () =>{
     const logo1=<img style = {logosStyle} src={jsLogo} alt='js Logo'></img>
     const logo2=<img style = {logosStyle} src={css3Logo} alt='css3 Logo'></img>
     const techUsedLogos =[logo1,logo2];
-                   
+
+  // const tetrisState = (props.myWorkState);
+           
 
 return (
 <div className = 'container' >
     <div className='row d-flex justify-content-center' >
-        <h1 className = 'pt-5 '>{title}</h1>
+        <h1 className = 'pt-5 '>{props.projects.title}</h1>
         
     </div>
     <hr style = {hrStyle}></hr>
@@ -54,7 +61,7 @@ return (
     }
     <div className = 'row'>
     <div className = 'col-md-4'>
-            <h1>info</h1>
+            <h1>{props.projects.info}</h1>
             <p>
             {info}
             </p>
@@ -100,10 +107,8 @@ return (
             <a href={gitLink}
              className = 'btn border border-dark  mx-3 h-100'>
              <FontAwesomeIcon icon = {faGithubSquare} size='3x'/> </a>
-           
-        
-        
         </div>
+        
         </div>
 </div>
 );

@@ -42,11 +42,11 @@ const App=()=> {
     <Router>
   
 
-    <NavigationBar/>
+   
 
 
 <main className = 'container-fluid ' style={mainStyle} >
-
+<NavigationBar/>
 
 <Switch>
   <Route exact path = '/'>
