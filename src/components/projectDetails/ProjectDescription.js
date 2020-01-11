@@ -19,13 +19,7 @@ const hrStyle = {
    marginBottom:'2vw',
    backgroundColor:'white'
 }
-const logosStyle = {
-   height:'5.5vh' ,
-   marginRight: '4vh', 
-   
- 
- 
-}
+
 
               
 
@@ -36,15 +30,10 @@ const ProjectDescription = (props) =>{
     
 
 
-    const info = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,';
-    const carouselImage1 =TetrisImage;
-    const carouselImage2 = Owl;
-    const carouselImage3 = Bird;
-    const gitLink ='https://github.com/Diotr/MyPortfolio';
-    const playButton = <button className ='btn d-none  d-md-block border-dark h-100'>Play something</button>;
-    const logo1=<img style = {logosStyle} src={jsLogo} alt='js Logo'></img>
-    const logo2=<img style = {logosStyle} src={css3Logo} alt='css3 Logo'></img>
-    const techUsedLogos =[logo1,logo2];
+    
+
+    
+    
 
   // const tetrisState = (props.myWorkState);
            
@@ -63,7 +52,7 @@ return (
     <div className = 'col-md-4'>
             <h1>{props.projects.info}</h1>
             <p>
-            {info}
+            {props.projects.description}
             </p>
           
         </div>
@@ -71,13 +60,13 @@ return (
         <div id='projectPreview' className='carousel slide ' data-ride='carousel'>
         <div className = 'carousel-inner'>
             <div className = 'carousel-item active'>
-                <img className='d-block w-100 rounded'src={carouselImage1} alt = 'FirstImg'></img>
+                <img className='d-block w-100 rounded'src={props.projects.image1} alt = 'FirstImg'></img>
             </div>
             <div className ='carousel-item'>
-            <img className='d-block w-100 rounded'src={carouselImage2} alt = 'SecondImg'></img>
+            <img className='d-block w-100 rounded'src={props.projects.image2} alt = 'SecondImg'></img>
             </div>
             <div className ='carousel-item'>
-            <img className='d-block w-100 rounded'src={carouselImage3} alt = 'ThirdImg'></img>
+            <img className='d-block w-100 rounded'src={props.projects.image3} alt = 'ThirdImg'></img>
             </div>
         </div>
         <a className = 'carousel-control-prev' href = '#projectPreview' role='button' data-slide = 'prev'>
@@ -97,14 +86,14 @@ return (
     <hr style = {hrStyle}></hr>
     <div className = 'row'>
         <div className = 'col-md-8 col-10'>
-            <div className = 'logos d-flex flex-row'>
-                {techUsedLogos}
+            <div className = 'logos d-flex flex-wrap col-md-flex-row'>
+                {props.projects.techUsedLogos}
             </div>
        
         </div>
         <div className = 'col-md-4 col-2 d-flex  justify-content-end align-items-center'>
-            {playButton}
-            <a href={gitLink}
+            {props.projects.playButton}
+            <a href={props.projects.gitLink}
              className = 'btn border border-dark  mx-3 h-100'>
              <FontAwesomeIcon icon = {faGithubSquare} size='3x'/> </a>
         </div>

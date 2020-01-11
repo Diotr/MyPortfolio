@@ -19,12 +19,12 @@ const MyWorkThumbnail = props =>{
     return( 
        <div className='myworkthumbnail'onClick={()=>{props.switchProjectHandler(projectIndex)}}>
         <div>
-        <img src ={props.pr.image}/>
+        <img src ={props.pr.image1}/>
         
      <div className ='toplayer'>
      <h1 className = 'thumbtext'>{props.pr.title}</h1>
      
-     {props.bu}
+    
      
          </div>
         </div> 
