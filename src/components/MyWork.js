@@ -20,6 +20,7 @@ const  leftColumnStyle = {
     height: '100%',
     paddingRight:'0',
     marginLeft:'2vh',
+    marginTop:'2vh',
     overflowY: 'auto',
     position: 'relative',
     width:'90%',
@@ -48,7 +49,7 @@ const projects = [
    image1: bird,
    image2: bird,
    image3: bird,
-   title: 'tetrissss',
+   title: 'Tetris',
    info: 'first',
    description: 'boberbober opis pierwszy',
    gitLink: 'https://github.com/Diotr/MyPortfolio',
@@ -57,9 +58,9 @@ const projects = [
  },
 
  {
- project: 'tetrisgame',
+ project: 'portfolio',
  image1: sowa,
- image2: bird,
+ image2: TetrisBackground,
  image3: TetrisBackground,
  title: 'portfolio ',
  info:'first',
@@ -69,20 +70,24 @@ const projects = [
 },
 
 {
- project: 'tetrisgame',
+ project: 'snake',
  image1: bird,
  image2: bird,
  image3: bird,
  title: 'snake',
- info:'first',
- description: 'opis snakea',
+ info:'about',
+ description: <ul>
+              <li>something about my snake</li>
+              <li>something else about my snake</li>
+
+              </ul>,
  gitLink: 'https://github.com/Diotr/MyPortfolio',
  playButton: null,
  techUsedLogos:[logoJs,logoCss3,logoBootsrap]
 },
 
 {
- project: 'tetrisgame',
+ project: 'tetrise',
  image1: bird,
  image2: bird,
  image3: bird,
@@ -94,18 +99,7 @@ const projects = [
  techUsedLogos:[logoJs,logoReact]
 },
 
-{
-  project: 'tetrisgame',
-  image1: bird,
-  image2: bird,
-  image3: bird,
-  title: 'tetrissss',
-  info:'first',
-  description: 'boberbober',
-  gitLink: 'https://github.com/Diotr/MyPortfolio',
-  playButton: null, 
-  techUsedLogos:['logo1,logo2']
- },
+
  
 ];
 
@@ -118,14 +112,12 @@ const MyWork=()=> {
 
   const switchProjectHandler = (projectIndex) =>{
     setState({arrIndex:projectIndex})
-  
-    console.log("switch"+projectIndex)
   };
 
 
     return (
- <div className =' d-flex flex-row'>
-     <div className ='col-4 col-md-2 d-flex' >
+ <div className =' d-flex flex-row '>
+     <div className ='col-4 col-md-2 d-flex ' >
     <div style= {leftColumnStyle}>
     
     {projects.map((item,index)=>(<MyWorkThumbnail key ={item.project}

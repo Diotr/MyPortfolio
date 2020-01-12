@@ -1,19 +1,15 @@
 import React from 'react';
-import '../styling/App.css';
 
-import AboutMe from './AboutMe';
+
+
 import NavigationBar from './NavigationBar';
 import MyWork from './MyWork';
 import Resume from './Resume';
 import Contact from './Contact';
-import SideDrawer from './SideDrawer';
 import Home from './Home';
-import TetrisDetails from './projectDetails/TetrisDetails'
-import SnakeGameDetails from './projectDetails/SnakeGameDetails'
 import ProjectDescription from './projectDetails/ProjectDescription'
 
 import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
-import {Container, Jumbotron  } from 'react-bootstrap';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab, faGithub, faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 import { faCheckSquare, faCoffee, faAddressCard,faPrint  } from '@fortawesome/free-solid-svg-icons'
@@ -29,22 +25,11 @@ const mainStyle = {
    paddingLeft:0,
    paddingRight:0,
   overflow:'auto'
-    
-   
-    
-
-
 
 }
 const App=()=> {
   return (
- 
     <Router>
-  
-
-   
-
-
 <main className = 'container-fluid ' style={mainStyle} >
 <NavigationBar/>
 
@@ -53,9 +38,7 @@ const App=()=> {
     <Home/>
   </Route>
 
-  <Route  path = '/aboutme'>
-     <AboutMe/>
-  </Route>
+  
      <Route  path = '/mywork'>
      <MyWork/>
    </Route>

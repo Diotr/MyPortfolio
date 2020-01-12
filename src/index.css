@@ -1,5 +1,15 @@
-html > body > #root  {
+
+ html > body > #root  {
     height: 100vh;
    background-color: teal;
+   font-family: Montserrat;
   }
-  
+  @font-face {
+    font-family: 'OpenSans';
+    src: local('OpenSans'),url(../src/fonts/Open_Sans/OpenSans-SemiBold.ttf) format('truetype');
+}
+
+@font-face{
+    font-family: 'Montserrat';
+    src: local('Montserrat'),url(../src/fonts/Montserrat/Montserrat-Regular.ttf) format('truetype');
+}

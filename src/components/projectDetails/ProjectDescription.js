@@ -1,43 +1,21 @@
 import React from 'react';
-import '../../styling/TetrisDetails.css';
+
 import {Container, Row, Column, Col} from 'react-bootstrap';
 import { relative } from 'path';
 import {carousel} from 'bootstrap';
-import TetrisImage from '../../media/images/tetr.png';
-import Owl from '../../media/images/sowa.jpg';
-import Bird from '../../media/images/bird_silhouette_vector_134154_1920x1080.jpg';
-import jsLogo from '../../media/logos/javascript-logo.png'
-import bootstrapLogo from '../../media/logos/bootstrap-logo.png'
-import reactLogo from '../../media/logos/react-logo.png'
-import css3Logo from '../../media/logos/css3-logo.png'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAdjust, faAddressCard, faPrint } from '@fortawesome/free-solid-svg-icons';
 import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
-import { useState, useEffect } from 'react';
+
 const hrStyle = {
    marginTop:'2vw',
    marginBottom:'2vw',
    backgroundColor:'white'
 }
 
-
-              
-
-
 const ProjectDescription = (props) =>{
     
-
-    
-
-
-    
-
-    
-    
-
-  // const tetrisState = (props.myWorkState);
-           
-
 return (
 <div className = 'container' >
     <div className='row d-flex justify-content-center' >
@@ -48,8 +26,8 @@ return (
     {
         //info
     }
-    <div className = 'row'>
-    <div className = 'col-md-4'>
+    <div className = 'row bg-light'>
+    <div className = 'col-md-4 p-3'>
             <h1>{props.projects.info}</h1>
             <p>
             {props.projects.description}
@@ -57,7 +35,7 @@ return (
           
         </div>
         <div className = 'col-md-8 '>
-        <div id='projectPreview' className='carousel slide ' data-ride='carousel'>
+        <div id='projectPreview' className='carousel slide ' data-ride='carousel' style={{boxShadow: '5px 5px 5px grey'}}>
         <div className = 'carousel-inner'>
             <div className = 'carousel-item active'>
                 <img className='d-block w-100 rounded'src={props.projects.image1} alt = 'FirstImg'></img>
