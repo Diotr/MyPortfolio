@@ -5,6 +5,12 @@ import { Container } from 'react-bootstrap';
 import '../styling/MyWork.css';
 import ProjectDescription from './projectDetails/ProjectDescription';
 
+//tetris screenshots
+import Tetris1 from '../media/images/tetris1.png';
+import Tetris2 from '../media/images/tetris2.png';
+import Tetris3 from '../media/images/tetris3.png';
+import Tetris4 from '../media/images/tetris4.png';
+
 import TetrisBackground from '../media/images/tetr.png';
 import sowa from '../media/images/sowa.jpg';
 import bird from '../media/images/bird_silhouette_vector_134154_1920x1080.jpg';
@@ -42,19 +48,19 @@ const logoReact=<img style = {logosStyle} src={reactLogo} alt='css3 Logo'></img>
 const logoBootsrap=<img style = {logosStyle} src={bootstrapLogo} alt='css3 Logo'></img>
 
 
-
 const projects = [
   {
    project: 'tetrisgame',
-   image1: bird,
-   image2: bird,
-   image3: bird,
+   image1: Tetris1,
+   image2: Tetris2,
+   image3: Tetris3,
    title: 'Tetris',
    info: 'first',
    description: 'boberbober opis pierwszy',
-   gitLink: 'https://github.com/Diotr/MyPortfolio',
-   playButton: <button className ='btn d-none  d-md-block border-dark h-100'>Play Tetris</button>,
-   techUsedLogos:[logoJs,logoReact,logoCss3,logoBootsrap]
+   gitLink: 'https://github.com/Piotr-Michalec/tetris-react',
+   playButton: <button onClick={()=>window.open('https://www.onet.pl/', '_blank')} 
+                className ='btn d-none  d-md-block border-dark h-100'>Play Tetris</button>,
+   techUsedLogos: [logoJs,logoReact,logoCss3]
  },
 
  {
@@ -66,7 +72,7 @@ const projects = [
  info:'first',
  description: 'bopis drugi',
  gitLink: 'https://github.com/Diotr/MyPortfolio',
- playButton: null,  techUsedLogos:[logoJs,logoReact,logoBootsrap]
+ playButton: null,  techUsedLogos:[logoReact,logoJs,logoCss3,logoBootsrap]
 },
 
 {
@@ -113,6 +119,7 @@ const MyWork=()=> {
   const switchProjectHandler = (projectIndex) =>{
     setState({arrIndex:projectIndex})
   };
+
 
 
     return (
