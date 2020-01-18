@@ -11,15 +11,25 @@ import Tetris2 from '../media/images/tetris2.png';
 import Tetris3 from '../media/images/tetris3.png';
 import Tetris4 from '../media/images/tetris4.png';
 
+//snake screenshots
+import Snake1 from '../media/images/snake1.png';
+import Snake2 from '../media/images/snake2.png';
+import Snake3 from '../media/images/snake3.png';
+import Snake4 from '../media/images/snake4.png';
+
+//time manager screenshots
+import TM1 from '../media/images/tm1.png';
+import TM2 from '../media/images/tm2.png';
+
 import TetrisBackground from '../media/images/tetr.png';
 import sowa from '../media/images/sowa.jpg';
 import bird from '../media/images/bird_silhouette_vector_134154_1920x1080.jpg';
-
+//tech logos
 import jsLogo from '../media/logos/javascript-logo.png'
 import bootstrapLogo from '../media/logos/bootstrap-logo.png'
 import reactLogo from '../media/logos/react-logo.png'
 import css3Logo from '../media/logos/css3-logo.png'
-
+import javaLogo from '../media/logos/java-logo.png'
 
 const  leftColumnStyle = {
 
@@ -46,6 +56,7 @@ const logoJs=<img style = {logosStyle} src={jsLogo} alt='js Logo'></img>
 const logoCss3=<img style = {logosStyle} src={css3Logo} alt='css3 Logo'></img>
 const logoReact=<img style = {logosStyle} src={reactLogo} alt='css3 Logo'></img>
 const logoBootsrap=<img style = {logosStyle} src={bootstrapLogo} alt='css3 Logo'></img>
+const logoJava=<img style = {logosStyle} src={javaLogo} alt='java Logo'></img>
 
 
 const projects = [
@@ -60,7 +71,7 @@ const projects = [
    gitLink: 'https://github.com/Piotr-Michalec/tetris-react',
    playButton: <button onClick={()=>window.open('https://www.onet.pl/', '_blank')} 
                 className ='btn d-none  d-md-block border-dark h-100'>Play Tetris</button>,
-   techUsedLogos: [logoJs,logoReact,logoCss3]
+   techUsedLogos: [logoJs,logoReact,logoCss3,logoBootsrap]
  },
 
  {
@@ -68,7 +79,7 @@ const projects = [
  image1: sowa,
  image2: TetrisBackground,
  image3: TetrisBackground,
- title: 'portfolio ',
+ title: 'portfolio template',
  info:'first',
  description: 'bopis drugi',
  gitLink: 'https://github.com/Diotr/MyPortfolio',
@@ -77,9 +88,9 @@ const projects = [
 
 {
  project: 'snake',
- image1: bird,
- image2: bird,
- image3: bird,
+ image1: Snake2,
+ image2: Snake4,
+ image3: Snake3,
  title: 'snake',
  info:'about',
  description: <ul>
@@ -87,22 +98,22 @@ const projects = [
               <li>something else about my snake</li>
 
               </ul>,
- gitLink: 'https://github.com/Diotr/MyPortfolio',
+ gitLink: 'https://github.com/Piotr-Michalec/Snake-or-something-else',
  playButton: null,
  techUsedLogos:[logoJs,logoCss3,logoBootsrap]
 },
 
 {
- project: 'tetrise',
- image1: bird,
- image2: bird,
- image3: bird,
- title: 'tetrissss',
+ project: 'timemanager',
+ image1: TM1,
+ image2: TM2,
+ image3: TM1,
+ title: 'time manager',
  info:'first',
  description: 'boberbober',
- gitLink: 'https://github.com/Diotr/MyPortfolio',
+ gitLink: 'https://github.com/Piotr-Michalec/Task-Manager',
  playButton: null, 
- techUsedLogos:[logoJs,logoReact]
+ techUsedLogos:[logoJava]
 },
 
 

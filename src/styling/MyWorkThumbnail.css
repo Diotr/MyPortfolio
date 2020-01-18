@@ -31,16 +31,17 @@
 
  div.toplayer .thumbtext{
   font-size:2vw;
-  color:whitesmoke;
+  color:black;
   position: relative;
-  top:50%;
+  top:20%;
   left:10%;
   max-width: 70%;
 }
  
  div.toplayer:hover .thumbtext{ 
       
-      left:15%;
+      left:5%;
+      color: whitesmoke;
      
  }
 
