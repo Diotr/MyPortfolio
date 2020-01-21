@@ -4,7 +4,7 @@ import React from 'react';
 const Home = () =>{
     return(
 <div className="container  p-5 h-75 mt-5">
-      <h1 className='jumbotron'>Diotrek Michalce</h1>
+      <h1 className='jumbotron'>About me me me</h1>
       <div className=' h-100 ' style={{borderLeft: '1px solid rgba(0,0,0,.1)', borderTop:'1px solid rgba(0,0,0,.1)', padding:'8vw' }}>
      
       <p className = 'm-3'> "Lorem ipsum dolor sit amet, 

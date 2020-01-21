@@ -27,10 +27,10 @@ const App=()=> {
         <NavigationBar/>
           <Switch>
             <Route exact path = '/'>
-              <MyWork/>
+              <Home/>
             </Route>
            <Route  path = '/mywork'>
-           <Home/>
+              <MyWork/>
             </Route>
             <Route  path = '/resume'>
               <Resume/>
