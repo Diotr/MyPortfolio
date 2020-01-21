@@ -5,26 +5,26 @@ import { Container } from 'react-bootstrap';
 import '../styling/MyWork.css';
 import ProjectDescription from './projectDetails/ProjectDescription';
 
-//tetris screenshots
-import Tetris1 from '../media/images/tetris1.png';
-import Tetris2 from '../media/images/tetris2.png';
-import Tetris3 from '../media/images/tetris3.png';
-import Tetris4 from '../media/images/tetris4.png';
+//tetris screenjpgts
+import Tetris1 from '../media/images/tetris1.jpg';
+import Tetris2 from '../media/images/tetris2.jpg';
+import Tetris3 from '../media/images/tetris3.jpg';
+import Tetris4 from '../media/images/tetris4.jpg';
 
-//snake screenshots
-import Snake1 from '../media/images/snake1.png';
-import Snake2 from '../media/images/snake2.png';
-import Snake3 from '../media/images/snake3.png';
-import Snake4 from '../media/images/snake4.png';
+//snake screenjpgts
+import Snake1 from '../media/images/snake1.jpg';
+import Snake2 from '../media/images/snake2.jpg';
+import Snake3 from '../media/images/snake3.jpg';
+import Snake4 from '../media/images/snake4.jpg';
 
-//time manager screenshots
-import TM1 from '../media/images/tm1.png';
-import TM2 from '../media/images/tm2.png';
+//time manager screenjpgts
+import TM1 from '../media/images/tm1.jpg';
+import TM2 from '../media/images/tm2.jpg';
 
-import TetrisBackground from '../media/images/tetr.png';
+import TetrisBackground from '../media/images/tetr.jpg';
 import sowa from '../media/images/sowa.jpg';
 import bird from '../media/images/bird_silhouette_vector_134154_1920x1080.jpg';
-//tech logos
+//tech jpgos
 import jsLogo from '../media/logos/javascript-logo.png'
 import bootstrapLogo from '../media/logos/bootstrap-logo.png'
 import reactLogo from '../media/logos/react-logo.png'
