@@ -49,8 +49,8 @@ const rightColumnStyle ={
     overflowY:'hidden'
 }
 const logosStyle = {
-  height:'5.5vh' ,
-  marginRight: '4vh', 
+  height:'4vw' ,
+  margin: '1vw', 
   }
  
 const logoJs=<img style = {logosStyle} src={jsLogo} alt='js Logo'></img>
@@ -136,7 +136,7 @@ const MyWork=()=> {
 
     return (
  <div className =' d-flex flex-row '>
-     <div className ='col-4 col-md-2 d-flex ' >
+     <div className ='col-4 col-md-2 d-flex p-0' >
     <div style= {leftColumnStyle}>
     
     {projects.map((item,index)=>(<MyWorkThumbnail key ={item.project}

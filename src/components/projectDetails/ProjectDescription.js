@@ -49,12 +49,12 @@ return (
   </div>
     <hr style = {hrStyle}></hr>
       <div className = 'row'>
-        <div className = 'col-md-8 col-10'>
+        <div className = 'col-md-8 col-8'>
             <div className = 'logos d-flex flex-wrap col-md-flex-row'>
                 {props.projects.techUsedLogos}
             </div>
         </div>
-          <div className = 'col-md-4 col-2 d-flex  justify-content-end align-items-center'>
+          <div className = 'col-md-4 col-4 d-flex flex-wrap flex-md-row justify-content-md-end justify-content-around align-items-center'>
             {props.projects.playButton}
               <a href={props.projects.gitLink} target='_blank'
               className = 'btn border border-dark  mx-3 h-100'>
