@@ -2,6 +2,10 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 
+import Carousel from '../projectDetails/carousel';
+import TechLogos from '../projectDetails/TechLogos';
+import Buttons from '../projectDetails/Buttons';
+
 const hrStyle = {
    marginTop:'2vw',
    marginBottom:'2vw',
@@ -24,41 +28,16 @@ return (
           </p> 
       </div>
       <div className = 'col-md-8 '>
-        <div id='projectPreview' className='carousel slide ' data-ride='carousel' style={{boxShadow: '5px 5px 5px grey'}}>
-        <div className = 'carousel-inner'>
-          <div className = 'carousel-item active'>
-            <img className='d-block w-100 rounded'src={props.projects.image1} alt = 'FirstImg'></img>
-          </div>
-            <div className ='carousel-item'>
-              <img className='d-block w-100 rounded'src={props.projects.image2} alt = 'SecondImg'></img>
-            </div>
-            <div className ='carousel-item'>
-              <img className='d-block w-100 rounded'src={props.projects.image3} alt = 'ThirdImg'></img>
-            </div>
-        </div>
-          <a className = 'carousel-control-prev' href = '#projectPreview' role='button' data-slide = 'prev'>
-            <span className='carousel-control-prev-icon' aria-hidden='true'></span>
-            <span className='sr-only'>Prev</span>
-          </a>
-          <a className = 'carousel-control-next' href = '#projectPreview' role='button' data-slide = 'next'>
-            <span className='carousel-control-next-icon' aria-hidden='true'></span>
-            <span className='sr-only'>Next</span>
-          </a>
-    </div>
-  </div>   
+        <Carousel projects={props.projects}/>
+      </div>
   </div>
     <hr style = {hrStyle}></hr>
       <div className = 'row'>
-        <div className = 'col-md-8 col-8'>
-            <div className = 'logos d-flex flex-wrap col-md-flex-row'>
-                {props.projects.techUsedLogos}
-            </div>
+        <div className = 'col m-3 m-md-1'>
+          <TechLogos projects = {props.projects}/>
         </div>
-          <div className = 'col-md-4 col-4 d-flex flex-wrap flex-md-row justify-content-md-end justify-content-around align-items-center'>
-            {props.projects.playButton}
-              <a href={props.projects.gitLink} target='_blank'
-              className = 'btn border border-dark  mx-3 h-100'>
-               <FontAwesomeIcon icon = {faGithubSquare} size='3x'/> </a>
+        <div className=' col-md-4 d-flex justify-content-center justify-content-md-end m-md-3'>
+        <Buttons projects = {props.projects}/>
         </div>
       </div>
 </div>

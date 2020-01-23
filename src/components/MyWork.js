@@ -49,7 +49,7 @@ const rightColumnStyle ={
     overflowY:'hidden'
 }
 const logosStyle = {
-  height:'4vw' ,
+  height:'4vh' ,
   margin: '1vw', 
   }
  
@@ -71,8 +71,8 @@ const projects = [
    description: 'boberbober opis pierwszy',
    gitLink: 'https://github.com/Piotr-Michalec/tetris-react',
    playButton: <button onClick={()=>window.open('https://www.onet.pl/', '_blank')} 
-                className ='btn d-none  d-md-block border-dark h-100'>Play Tetris</button>,
-   techUsedLogos: [logoJs,logoReact,logoCss3,logoBootsrap]
+                className ='btn d-md-block border-dark mr-1'>Play Tetris</button>,
+   techUsedLogos: [logoReact,logoJs,logoCss3,logoBootsrap]
  },
 
  {
@@ -84,7 +84,9 @@ const projects = [
  info:'first',
  description: 'bopis drugi',
  gitLink: 'https://github.com/Diotr/MyPortfolio',
- playButton: null,  techUsedLogos:[logoReact,logoJs,logoCss3,logoBootsrap]
+ playButton: <button onClick={()=>window.open('https://www.onet.pl/', '_blank')} 
+ className ='btn d-md-block border-dark mr-1'>Visit site</button>,
+   techUsedLogos:[logoReact,logoJs,logoCss3,logoBootsrap]
 },
 
 {

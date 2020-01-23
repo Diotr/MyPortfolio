@@ -1,8 +1,7 @@
 import React from 'react';
 const Resume=()=> {
   return (
-    <div className="container  d-flex justify-content-center">
-      <div className='w-75  m-5 p-5 border bg-light'>
+    <div className="container w-75 p-md-5 p-2  h-75 mt-5">
       <h1>Resume</h1>
       <p>A résumé or resume[a][1] is a document used and created by a person to present their background, skills, and accomplishments. Résumés can be used for a variety of reasons, but most often they are used to secure new employment.[2]
 
@@ -19,7 +18,6 @@ The curriculum vitae (CV) used for employment purposes in the UK (and in other E
 
 In South Asian countries such as India, Pakistan, and Bangladesh, biodata is often used in place of a résumé.[3]]</p>
     </div>
-  </div>
   );
 }
 
