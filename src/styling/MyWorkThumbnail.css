@@ -7,6 +7,7 @@
       perspective: 1px;
       border-radius: 5px;  
       box-shadow: 5px 5px 5px grey;
+      font-size:2vw;
       }
    div.myworkthumbnail img{
      position: relative;
@@ -15,7 +16,7 @@
  }
  
  div.toplayer{
-  background-color: rgba(38, 38, 38, 0);
+  background-color:  rgba(38, 38, 38, 0.9);
 
    position: absolute;
    top:0;
@@ -26,12 +27,12 @@
  border-radius: 5px; 
  }
  div.toplayer:hover{
-  background-color: rgba(38, 38, 38, 0.9); 
+  background-color: rgba(38, 38, 38, 0.5); 
 }
 
  div.toplayer .thumbtext{
   font-size:2vw;
-  color:black;
+  color:whitesmoke;
   position: relative;
   top:20%;
   left:10%;
@@ -41,7 +42,7 @@
  div.toplayer:hover .thumbtext{ 
       
       left:5%;
-      color: whitesmoke;
+      color: black;
      
  }
 

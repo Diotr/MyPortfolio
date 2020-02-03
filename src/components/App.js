@@ -24,7 +24,7 @@ const App=()=> {
   return (
   
       <main className = 'container-fluid ' style={mainStyle} >
-        <NavigationBar/>
+      <NavigationBar/>
           <Switch>
             <Route exact path = '/'>
               <Home/>

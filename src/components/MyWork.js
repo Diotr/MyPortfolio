@@ -4,6 +4,10 @@ import MyWorkThumbnail from './MyWorkThumbnail';
 import { Container } from 'react-bootstrap';
 import '../styling/MyWork.css';
 import ProjectDescription from './projectDetails/ProjectDescription';
+//portfolio screenshots
+import Portfolio1 from '../media/images/PortfolioScreenshot.jpg';
+import Portfolio2 from '../media/images/PortfolioScreenshot2.jpg';
+import Portfolio3 from '../media/images/PortfolioScreenshot3.jpg';
 
 //tetris screenshots
 import Tetris1 from '../media/images/tetris1.jpg';
@@ -25,12 +29,29 @@ import TM2 from '../media/images/tm2.jpg';
 import TetrisBackground from '../media/images/tetr.jpg';
 import sowa from '../media/images/sowa.jpg';
 import bird from '../media/images/bird_silhouette_vector_134154_1920x1080.jpg';
+
 //tech logos
 import jsLogo from '../media/logos/javascript-logo.png'
 import bootstrapLogo from '../media/logos/bootstrap-logo.png'
 import reactLogo from '../media/logos/react-logo.png'
 import css3Logo from '../media/logos/css3-logo.png'
 import javaLogo from '../media/logos/java-logo.png'
+import routerLogo from '../media/logos/router-logo.png'
+import hooksLogo from '../media/logos/react-hooks.PNG'
+
+//descriptions
+const tetrisDescription = `The game board is a two-dimensional array stored in the state. 
+ Internal arrays represents horizontal rows, where each element contains a number from 0 to 5 which determines what colour given field is.
+ Blocks movement is achieved by updating those numbers.`;
+
+const portfolioDescription =`Portfolio template Web App, projects are stored as objects in the projects array,
+ so it makes it very easy to use.
+ Just utilise the template provided to add another one, the thumbnail will be added automatically.
+ This web app has been created with the use of JavaScript, React JS, react-hooks, react-router, Bootstrap, CSS3 and is fully responsive`;
+
+const snakeDescription = `A classic snake made with JavaScript`;
+
+const timemanagerDescription = `Application created for effective time management.`;
 
 const  leftColumnStyle = {
 
@@ -46,7 +67,8 @@ const  leftColumnStyle = {
     bottom: '0'
 }
 const rightColumnStyle ={
-    overflowY:'hidden'
+    overflowY:'hidden',
+    height:'100%'
 }
 const logosStyle = {
   height:'4vh' ,
@@ -55,52 +77,46 @@ const logosStyle = {
  
 const logoJs=<img style = {logosStyle} src={jsLogo} alt='js Logo'></img>
 const logoCss3=<img style = {logosStyle} src={css3Logo} alt='css3 Logo'></img>
-const logoReact=<img style = {logosStyle} src={reactLogo} alt='css3 Logo'></img>
-const logoBootsrap=<img style = {logosStyle} src={bootstrapLogo} alt='css3 Logo'></img>
+const logoReact=<img style = {logosStyle} src={reactLogo} alt='react Logo'></img>
+const logoBootsrap=<img style = {logosStyle} src={bootstrapLogo} alt='bootstrap Logo'></img>
 const logoJava=<img style = {logosStyle} src={javaLogo} alt='java Logo'></img>
-
+const logoRouter=<img style = {logosStyle} src={routerLogo} alt='react-router Logo'></img>
+const logoHooks=<img style = {logosStyle} src={hooksLogo} alt='react-hooks Logo'></img>
 
 const projects = [
-  {
-   project: 'tetrisgame',
-   image1: Tetris1,
-   image2: Tetris2,
-   image3: Tetris3,
-   title: 'Tetris',
-   info: 'first',
-   description: 'boberbober opis pierwszy',
-   gitLink: 'https://github.com/Piotr-Michalec/tetris-react',
-   playButton: <button onClick={()=>window.open('https://www.onet.pl/', '_blank')} 
-                className ='btn d-md-block border-dark mr-1'>Play Tetris</button>,
-   techUsedLogos: [logoReact,logoJs,logoCss3,logoBootsrap]
- },
-
  {
  project: 'portfolio',
- image1: sowa,
- image2: TetrisBackground,
- image3: TetrisBackground,
- title: 'portfolio template',
- info:'first',
- description: 'bopis drugi',
+ image1: Portfolio1,
+ image2: Portfolio2,
+ image3: Portfolio3,
+ title: 'Portfolio template',
+ info:'About',
+ description: portfolioDescription,
  gitLink: 'https://github.com/Diotr/MyPortfolio',
- playButton: <button onClick={()=>window.open('https://www.onet.pl/', '_blank')} 
- className ='btn d-md-block border-dark mr-1'>Visit site</button>,
-   techUsedLogos:[logoReact,logoJs,logoCss3,logoBootsrap]
+ playButton:  null,
+techUsedLogos:[logoReact,logoJs,logoCss3,logoBootsrap,logoRouter,logoHooks]
 },
-
 {
- project: 'snake',
+  project: 'tetrisgame',
+  image1: Tetris1,
+  image2: Tetris2,
+  image3: Tetris3,
+  title: 'Tetris',
+  info: 'About',
+  description: tetrisDescription,
+  gitLink: 'https://github.com/Piotr-Michalec/tetris-react',
+  playButton: <button onClick={()=>window.open('https://suspicious-murdock-bd2311.netlify.com/', '_blank')} 
+               className ='btn d-md-block border-dark mr-1'>Play Tetris</button>,
+  techUsedLogos: [logoReact,logoJs,logoCss3,logoBootsrap]
+},
+{
+ project: 'Snake',
  image1: Snake2,
  image2: Snake4,
  image3: Snake3,
- title: 'snake',
- info:'about',
- description: <ul>
-              <li>something about my snake</li>
-              <li>something else about my snake</li>
-
-              </ul>,
+ title: 'Snake',
+ info:'About',
+ description: snakeDescription,
  gitLink: 'https://github.com/Piotr-Michalec/Snake-or-something-else',
  playButton: null,
  techUsedLogos:[logoJs,logoCss3,logoBootsrap]
@@ -111,49 +127,35 @@ const projects = [
  image1: TM1,
  image2: TM2,
  image3: TM1,
- title: 'time manager',
- info:'first',
- description: 'boberbober',
+ title: 'Time Manager',
+ info:'About',
+ description: timemanagerDescription,
  gitLink: 'https://github.com/Piotr-Michalec/Task-Manager',
  playButton: null, 
  techUsedLogos:[logoJava]
 },
 
-
- 
 ];
 
 
 
 const MyWork=()=> {
-  
-  
   const [state, setState] = useState({arrIndex:0});
-
   const switchProjectHandler = (projectIndex) =>{
-    setState({arrIndex:projectIndex})
-  };
-
-
-
+    setState({arrIndex:projectIndex})};
     return (
- <div className =' d-flex flex-row '>
-     <div className ='col-4 col-md-2 d-flex p-0' >
+  <div className =' d-flex flex-row '>
+    <div className ='col-4 col-md-2 d-flex p-0' >
     <div style= {leftColumnStyle}>
-    
     {projects.map((item,index)=>(<MyWorkThumbnail key ={item.project}
      pr = {item} index = {index} switchProjectHandler={switchProjectHandler}/> )) } 
-      </div>
-      </div>
-      <div className = 'col ' >
-        <div style = {rightColumnStyle}>
-       
-   <ProjectDescription projects = {projects[state.arrIndex]} 
-    
-   />
-   </div>
-      </div>
-      
+    </div>
+    </div>
+    <div className = 'col ' >
+    <div style = {rightColumnStyle}>
+        <ProjectDescription projects = {projects[state.arrIndex]}/>
+    </div>
+    </div>  
   </div>
     )
   };
