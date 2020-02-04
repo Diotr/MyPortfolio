@@ -1,7 +1,6 @@
 import React from 'react';
 import {useState} from 'react';
 import MyWorkThumbnail from './MyWorkThumbnail';
-import { Container } from 'react-bootstrap';
 import '../styling/MyWork.css';
 import ProjectDescription from './projectDetails/ProjectDescription';
 //portfolio screenshots
@@ -26,10 +25,6 @@ import Snake4 from '../media/images/snake4.jpg';
 import TM1 from '../media/images/tm1.jpg';
 import TM2 from '../media/images/tm2.jpg';
 
-import TetrisBackground from '../media/images/tetr.jpg';
-import sowa from '../media/images/sowa.jpg';
-import bird from '../media/images/bird_silhouette_vector_134154_1920x1080.jpg';
-
 //tech logos
 import jsLogo from '../media/logos/javascript-logo.png'
 import bootstrapLogo from '../media/logos/bootstrap-logo.png'
@@ -37,7 +32,7 @@ import reactLogo from '../media/logos/react-logo.png'
 import css3Logo from '../media/logos/css3-logo.png'
 import javaLogo from '../media/logos/java-logo.png'
 import routerLogo from '../media/logos/router-logo.png'
-import hooksLogo from '../media/logos/react-hooks.PNG'
+import hooksLogo from '../media/logos/hooks.png'
 
 //descriptions
 const tetrisDescription = `The game board is a two-dimensional array stored in the state. 
@@ -74,7 +69,7 @@ const logosStyle = {
   height:'4vh' ,
   margin: '1vw', 
   }
- 
+ //logos
 const logoJs=<img style = {logosStyle} src={jsLogo} alt='js Logo'></img>
 const logoCss3=<img style = {logosStyle} src={css3Logo} alt='css3 Logo'></img>
 const logoReact=<img style = {logosStyle} src={reactLogo} alt='react Logo'></img>
@@ -153,7 +148,7 @@ const MyWork=()=> {
     </div>
     <div className = 'col ' >
     <div style = {rightColumnStyle}>
-        <ProjectDescription projects = {projects[state.arrIndex]}/>
+      <ProjectDescription projects = {projects[state.arrIndex]}/>
     </div>
     </div>  
   </div>
