@@ -1,6 +1,7 @@
 import React from 'react';
 import {useState} from 'react';
 import MyWorkThumbnail from './MyWorkThumbnail';
+
 import '../styling/MyWork.css';
 import ProjectDescription from './projectDetails/ProjectDescription';
 //portfolio screenshots
@@ -24,6 +25,9 @@ import Snake4 from '../media/images/snake4.jpg';
 //time manager screenshots
 import TM1 from '../media/images/tm1.jpg';
 import TM2 from '../media/images/tm2.jpg';
+
+
+
 
 //tech logos
 import jsLogo from '../media/logos/javascript-logo.png'

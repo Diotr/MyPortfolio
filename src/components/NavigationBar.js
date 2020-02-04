@@ -1,6 +1,7 @@
 import React from 'react';
-import {Nav,Navbar} from 'react-bootstrap';
+import {Nav,Navbar,Container,NavDropdown,Form,FormControl,Button,Link, NavLink} from 'react-bootstrap';
 import '../styling/NavigationBar.css';
+import {button} from 'bootstrap';
 
 function NavigationBar() {
   return (
