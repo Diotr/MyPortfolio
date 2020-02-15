@@ -82,6 +82,7 @@ const logoJava=<img style = {logosStyle} src={javaLogo} alt='java Logo'></img>
 const logoRouter=<img style = {logosStyle} src={routerLogo} alt='react-router Logo'></img>
 const logoHooks=<img style = {logosStyle} src={hooksLogo} alt='react-hooks Logo'></img>
 
+//array of projects, stored as objects
 const projects = [
  {
  project: 'portfolio',
