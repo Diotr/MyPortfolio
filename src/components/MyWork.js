@@ -105,7 +105,7 @@ techUsedLogos:[logoReact,logoJs,logoCss3,logoBootsrap,logoRouter,logoHooks]
   info: 'About',
   description: tetrisDescription,
   gitLink: 'https://github.com/Piotr-Michalec/tetris-react',
-  playButton: <button onClick={()=>window.open('https://suspicious-murdock-bd2311.netlify.com/', '_blank')} 
+  playButton: <button onClick={()=>window.open('https://notatetris.netlify.com/', '_blank')} 
                className ='btn d-md-block border-dark mr-1'>Play Tetris</button>,
   techUsedLogos: [logoReact,logoJs,logoCss3,logoBootsrap]
 },
