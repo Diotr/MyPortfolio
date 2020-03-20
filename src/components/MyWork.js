@@ -26,6 +26,11 @@ import Snake4 from '../media/images/snake4.jpg';
 import TM1 from '../media/images/tm1.jpg';
 import TM2 from '../media/images/tm2.jpg';
 
+//weather app screenshots
+import wa1 from '../media/images/weather-app1.png'
+import wa2 from '../media/images/weather-app2.png'
+import wa3 from '../media/images/weather-app3.png'
+
 
 
 
@@ -39,6 +44,8 @@ import routerLogo from '../media/logos/router-logo.png'
 import hooksLogo from '../media/logos/hooks.png'
 
 //descriptions
+const weatherAppDescription =`about`;
+
 const tetrisDescription = `The game board is a two-dimensional array stored in the state. 
  Internal arrays represents horizontal rows, where each element contains a number from 0 to 5 which determines what colour given field is.
  Blocks movement is achieved by updating those numbers.`;
@@ -84,6 +91,19 @@ const logoHooks=<img style = {logosStyle} src={hooksLogo} alt='react-hooks Logo'
 
 //array of projects, stored as objects
 const projects = [
+  {
+    project: 'weatheronearth',
+    image1: wa1,
+    image2: wa2,
+    image3: wa3,
+    title: 'Weather App',
+    info: 'About',
+    description: weatherAppDescription,
+    gitLink: 'https://github.com/Piotr-Michalec/World-Weather-Webapp',
+    playButton: <button onClick={()=>window.open('https://weatheronearth.netlify.com//', '_blank')} 
+                 className ='btn d-md-block border-dark mr-1'>Go to Website</button>,
+    techUsedLogos: [logoReact,logoJs,logoCss3,logoBootsrap]
+  },
  {
  project: 'portfolio',
  image1: Portfolio1,
