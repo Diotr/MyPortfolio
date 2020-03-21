@@ -13,7 +13,7 @@ import Portfolio3 from '../media/images/PortfolioScreenshot3.jpg';
 import Tetris1 from '../media/images/tetris1.jpg';
 import Tetris2 from '../media/images/tetris2.jpg';
 import Tetris3 from '../media/images/tetris3.jpg';
-import Tetris4 from '../media/images/tetris4.jpg';
+
 
 //snake screenshots
 import Snake1 from '../media/images/snake1.jpg';
@@ -44,7 +44,8 @@ import routerLogo from '../media/logos/router-logo.png'
 import hooksLogo from '../media/logos/hooks.png'
 
 //descriptions
-const weatherAppDescription =`about`;
+const weatherAppDescription =`Weather App created with ReactJS, uses Google and Dark Sky APIs.
+When point on the map is selected, the app will show current weather in that location.`;
 
 const tetrisDescription = `The game board is a two-dimensional array stored in the state. 
  Internal arrays represents horizontal rows, where each element contains a number from 0 to 5 which determines what colour given field is.
